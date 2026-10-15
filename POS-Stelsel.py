@@ -21,8 +21,6 @@ chosen_items = []
 # Maximum number of products the customer can place in the cart at one time. This prevents the cart from becoming too full.
 MAX_CART_ITEMS = 10
 
-
-
 # This function prints the product list and the available commands. It helps the user know what can be purchased and what actions they can take.
 def display_inventory():
     print("Items available:")
@@ -43,8 +41,6 @@ def check_cart():
         for cart_item in chosen_items:
             print(f"{cart_item.name} - R{cart_item.price:.2f}")
         print(f"Total: R{total:.2f}")
-
-
 
 # This function removes all items from the shopping cart. It is used when the user chooses the 'clear cart' option.
 def clear_cart():
